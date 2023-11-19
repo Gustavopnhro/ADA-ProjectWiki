@@ -25,4 +25,4 @@ jobs:
     - name: Generate HTML
       run: |
         ls -la
-        main-script.py
+        main_script.py
