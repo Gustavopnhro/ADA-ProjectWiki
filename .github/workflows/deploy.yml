@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install markdown jinja2
 
     - name: Generate HTML
       run: main_script.py  
