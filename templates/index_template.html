@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500&family=Roboto+Condensed:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/templates/assets/img/post_gem.png" type="image/x-icon">
     <title>Blog Central</title>
+
 </head>
 <body>
-    <h1>Blog Central</h1>
+    <header>
+        <h1>Central</h1>
+    </header>
     <ul>
         {% for post in posts %}
-            <li>
-                <a href="{{ post.link }}">{{ post.title }}</a>
-                <div>{{post.preview}}</div>
+
+        <a href="{{ post.link }}">
+            <li class="post_box">
+                <img src="/templates/assets/img/post_gem.png" alt="">
+                <h2 href="" class="post_link">{{ post.title }} </h2>
+                <div class="post_description">{{post.preview}}</div>
             </li>
+        </a>    
+
         {% endfor %}
     </ul>
+
+   
+
 </body>
 </html>
