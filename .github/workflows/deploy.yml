@@ -23,7 +23,7 @@ jobs:
         pip install markdown jinja2
 
     - name: Generate HTML
-      run: main_script.py  
+      run: ADA-ProjectWiki/main_script.py  
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
