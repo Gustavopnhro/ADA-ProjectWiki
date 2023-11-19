@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # ou a branch que você deseja monitorar
+      - main
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Generate HTML
-      run: python your_script_name.py  # Substitua 'your_script_name.py' pelo nome real do seu script
+      run: main_script.py  
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
