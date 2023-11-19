@@ -18,6 +18,7 @@ Este projeto tem como objetivo abordar alguns conceitos vistos durante o módulo
 - 🔜 Documentar como foi feito o procedimento: O primeiro post no Wiki/blog deve ser uma documentação de como você pensou e quais os principais procedimentos que realizou para concluir essa atividade.
 <br>
 ## Dependências  ⚙️
+
 ```bash
 pip install markdown jinja2
 ```
@@ -49,6 +50,7 @@ This project goal is study some concepts seemed during the module. For it we'll 
 <br>
 
 ## Dependecies ⚙️
+
 ```bash
 pip install markdown jinja2
 ```
