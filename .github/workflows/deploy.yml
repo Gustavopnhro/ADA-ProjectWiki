@@ -25,4 +25,4 @@ jobs:
     - name: Generate HTML
       run: |
         ls -la
-        main_script.py
+        oython main_script.py
