@@ -4,12 +4,14 @@ from jinja2 import Environment, FileSystemLoader
 import json
 
 def generate_html_post(general, content):
-    env = Environment(loader=FileSystemLoader("templates"))
+    env = Environment(loader=FileSystemLoader(os.path.join(os.getcwd(), "templates")))
+    print("Current working directory:", os.getcwd())
     template = env.get_template("post_template.html")
     return template.render(title=general['title'], author=general['author'], description=general['description'], content=content)
 
 def index_page(posts):
-    env = Environment(loader=FileSystemLoader("templates"))
+    env = Environment(loader=FileSystemLoader(os.path.join(os.getcwd(), "templates")))
+    print("Current working directory:", os.getcwd())
     template = env.get_template("index_template.html")
     return template.render(posts=posts)
 

@@ -18,9 +18,13 @@ jobs:
       with:
         python-version: 3.8
 
+
     - name: Install dependencies
       run: |
         pip install markdown jinja2
 
+    - name: Print Working Directory
+      run: echo "Working directory is $PWD"
+      
     - name: Generate HTML
       run: python main_script.py
