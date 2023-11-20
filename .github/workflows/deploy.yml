@@ -23,6 +23,4 @@ jobs:
         pip install markdown jinja2
 
     - name: Generate HTML
-      run: |
-        ls -la
-        python main_script.py
+      run: python main_script.py
