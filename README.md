@@ -15,7 +15,7 @@ Este projeto tem como objetivo abordar alguns conceitos vistos durante o módulo
 - ✅ Personalização e Estilo: Personalize o estilo do blog usando CSS, criando uma aparência agradável (Isso fica a critério). 
 - ✅ Teste Local: Teste o blog localmente para verificar se as postagens são geradas corretamente e se o estilo está de acordo com o esperado. 
 - ✅ Publicação no GitHub Pages: Faça o push do projeto para o repositório no GitHub e habilite o GitHub Pages nas configurações do repositório. Isso permitirá que o blog seja publicado online.
-- 🔜 Documentar como foi feito o procedimento: O primeiro post no Wiki/blog deve ser uma documentação de como você pensou e quais os principais procedimentos que realizou para concluir essa atividade.
+- ✅ Documentar como foi feito o procedimento: O primeiro post no Wiki/blog deve ser uma documentação de como você pensou e quais os principais procedimentos que realizou para concluir essa atividade.
 <br>
 ## Dependências  ⚙️
 
@@ -26,7 +26,9 @@ pip install markdown jinja2
 
 ### Passo a passo 👣
 1. Criar a estrutura de como o projeto estará disposto;
-2. 
+2. Criar os templates .html que serão utilizados com o css (opcional);
+3. Adicionar a pastas dos arquivos .json;
+4. Configurar o script Python de forma que leia cada arquivo .md e transforme em uma página .html baseado nos templates criados no passo 2, em seguida gerando um json com os dados capturados do .md e agregando ao index principal.
 
 <br>
 
@@ -46,7 +48,7 @@ This project goal is study some concepts seemed during the module. For it we'll 
 - ✅ Style: Personalize the style in your blog using CSS, creating a nice appearance.
 - ✅ Local Test: Test locally your blog for verify if the posts are generating correct.
 - ✅ Publication in GitHub Pages: Push the project for the repository in GitHub and enable the GitHub Pages in repository settings.
-- 🔜 Document how had made the procedure: The first post in Wiki/blog need be a doc how you thought and which the principles procedures you used to finish this project.
+- ✅ Document how had made the procedure: The first post in Wiki/blog need be a doc how you thought and which the principles procedures you used to finish this project.
 <br>
 
 ## Dependecies ⚙️
@@ -57,3 +59,7 @@ pip install markdown jinja2
 <br>
 
 ### Step by Step 👣
+1. Create the structure for project;
+2. Create templates .html that will be used and create the css (optional);
+3. Create the .json file;
+4. Configure the python script that read each archive .md and transform in a page .html based on the created templates at the step 2, after generate a json with catched data from .md archive and use in the principal index.
