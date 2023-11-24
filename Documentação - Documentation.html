@@ -3,12 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/templates/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/templates/assets/img/post_gem.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/post_gem.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500&family=Roboto+Condensed:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Documentação - Documentation</title>
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --header-color: #121619;
+    --font-color: #E0DDCF;
+    --background-color: #121619;
+    color: var(--font-color);
+    --background-post-color-ative:#8D0801 ;
+    --backgroud-post-color: #ae0300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    width: 40vw;
+}
+
+.post_body {
+    background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)),
+        url('assets/img/background.jpg');
+    background-position: center;
+    padding: 10rem;
+}
+
+body {
+    /* background-color: var(--background-color); */
+    background:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)),
+        url('assets/img/background.jpg');
+    background-position: center; /* Centraliza a imagem no corpo */
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+/* INDEX TEMPLATE */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5));
+    padding: 40px;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.post_box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroud-post-color);
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    border: 3px solid var(--background-post-color-ative);
+    border-radius: 10px;
+    transition: background-color .2s ease;
+
+}
+
+.post_box img {
+    height: 40px;
+    transition: transform .5s ease;
+}
+
+.post_box img:hover {
+    transform: scale(1.5);
+}
+
+.post_box:hover {
+    background-color: var(--background-post-color-ative);
+}
+
+.post_box a{
+    font-size: 20px;
+}
+
+.post_box .post_description {
+    font-size: 16px;
+    background-color: var(--font-color);
+    height: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 85%;
+    color: #09814A;
+    border-radius: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/* POST TEMPLATE */
+
+.post_title {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 5rem;
+}
+
+.post_author {
+    display: flex;
+    justify-content: center; 
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.post_content {
+    margin: 2rem;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: var(--font-color);
+    padding: 4rem;
+    color: var(--background-color);
+    border-radius: 20px;
+    
+}
+
+.post_content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 2rem;
+}
+
+.back-button {
+    width: auto;
+    height: auto;
+
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    font-size: 40px;
+    border-radius: 100px;
+    padding: 10px 16px;
+    background-color: var(--backgroud-post-color);
+}
+
+    </style>
 </head>
 <body class="post_body">
     <a href="index.html" class="back-button">

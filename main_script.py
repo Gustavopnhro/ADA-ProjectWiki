@@ -16,7 +16,7 @@ def index_page(posts):
     return template.render(posts=posts)
 
 markdown_directory = "markdown_files"
-output_directory = "pages"
+output_directory = ""
 json_path = "json_path"
 
 markdown_files_list = [f for f in os.listdir(markdown_directory) if f.endswith(".md")]

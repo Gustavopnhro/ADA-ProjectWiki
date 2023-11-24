@@ -22,7 +22,7 @@ a {
 .post_body {
     background:
         linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)),
-        url('/templates/assets/img/background.jpg');
+        url('assets/img/background.jpg');
     background-position: center;
     padding: 10rem;
 }
@@ -31,7 +31,7 @@ body {
     /* background-color: var(--background-color); */
     background:
         linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)),
-        url('/templates/assets/img/background.jpg');
+        url('/assets/img/background.jpg');
     background-position: center; /* Centraliza a imagem no corpo */
     background-repeat: no-repeat; 
     height: 100vh;
