@@ -23,8 +23,6 @@ jobs:
       run: |
         pip install markdown jinja2
 
-    - name: Print Working Directory
-      run: echo "Working directory is $PWD"
-      
     - name: Generate HTML
-      run: python main_script.py
+      run: python3 main_script.py
+      
